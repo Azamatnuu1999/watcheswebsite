@@ -1,0 +1,50 @@
+.fourth{
+    .contain{
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .left{
+            width: 48%;
+            iframe{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .right{
+            width: 48%;
+            &__h3{
+                font-weight: 700;
+                font-size: 32px;
+                margin: 0 0 9px;
+            }
+            &__p{
+                font-size: 12px;
+                margin: 5px 0 12px;
+            }
+            &__button{
+                color: $kok;
+                padding: 5px 12px;
+                border: 1px solid #cccccc;
+                background-color: inherit;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            &__button:hover{
+                background-color: #cccccc;
+            }
+        }
+    }
+}
+
+@media(max-width:600px){
+    .fourth{
+        .contain{
+            .left, .right{
+                width: 100%;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+*:hover {
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.contain {
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 80%;
+}
+
+@media (max-width: 500px) {
+  .contain {
+    width: 96%;
+  }
+}
+header {
+  background-image: url(../media/Rectangle\ 58.png), url(../media/pngwing\ \(1\).png);
+  background-repeat: no-repeat;
+  background-size: cover, contain;
+  background-position: center, left top;
+}
+header .navbar__ul {
+  display: flex;
+  gap: 12px;
+  width: fit-content;
+  margin-left: auto;
+  padding: 18px 0;
+  align-items: center;
+}
+header .navbar__ul li {
+  font-size: 14px;
+}
+header .navbar__ul li button {
+  border: 1px solid #1617DB;
+  border-radius: 8px;
+  font-size: 13px;
+  padding: 5px 7px;
+  color: white;
+  text-transform: uppercase;
+  background-color: #1617DB;
+}
+header .navbar__ul li button:hover {
+  background-color: inherit;
+  color: #1617DB;
+}
+header .navbar__ul .active {
+  font-weight: 700;
+  border-bottom: 2px solid #1617DB;
+}
+header .showcase {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 60px 0;
+  align-items: center;
+}
+header .showcase .left {
+  width: 40%;
+}
+header .showcase .left__h5 {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #1617DB;
+  font-weight: 600;
+  margin: 8px 0;
+}
+header .showcase .left__h1 {
+  font-weight: 700;
+  margin: 8px 0;
+}
+header .showcase .left__p {
+  font-size: 13px;
+}
+header .showcase .left__button {
+  border: 1px solid #1617DB;
+  border-radius: 8px;
+  font-size: 13px;
+  padding: 5px 7px;
+  margin: 8px 0;
+  color: white;
+  text-transform: uppercase;
+  background-color: #1617DB;
+}
+header .showcase .left__button:hover {
+  background-color: inherit;
+  color: #1617DB;
+}
+header .showcase .left .active {
+  background-color: inherit;
+  color: #1617DB;
+}
+header .showcase .left .active:hover {
+  background-color: #1617DB;
+  color: white;
+}
+header .showcase .right {
+  width: 60%;
+}
+
+@media (max-width: 600px) {
+  header .contain .showcase .left, header .contain .showcase .right {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 350px) {
+  header .contain .navbar__ul {
+    gap: 4px;
+  }
+  header .contain .navbar__ul li {
+    font-size: 12px;
+  }
+  header .contain .navbar__ul li button {
+    font-size: 10px;
+  }
+}
+.second .contain {
+  padding: 40px 0;
+  text-align: center;
+}
+.second .contain__h3 {
+  font-weight: 700;
+  font-size: 32px;
+  margin: 7px 0;
+}
+.second .contain__p {
+  font-size: 12px;
+  width: 280px;
+  margin: 5px auto;
+}
+.second .contain__bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.second .contain__bottom .left, .second .contain__bottom .right {
+  width: 30%;
+  font-size: 13px;
+}
+.second .contain__bottom .left .card1, .second .contain__bottom .right .card1 {
+  cursor: pointer;
+}
+.second .contain__bottom .left .card1 p, .second .contain__bottom .right .card1 p {
+  margin-top: 0;
+}
+.second .contain__bottom .left img, .second .contain__bottom .right img {
+  width: 50%;
+}
+.second .contain__bottom .center {
+  width: 40%;
+}
+.second .contain__bottom .center img {
+  width: 90%;
+}
+
+@media (max-width: 600px) {
+  .second .contain__p {
+    width: 100%;
+  }
+  .second .contain__bottom .left, .second .contain__bottom .right {
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .second .contain__bottom .left .card1, .second .contain__bottom .right .card1 {
+    width: 32%;
+    font-size: 12px;
+  }
+  .second .contain__bottom .center {
+    width: 100%;
+  }
+  .second .contain__bottom .center img {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+.third .contain {
+  padding: 40px 0;
+}
+.third .contain__h5 {
+  color: #1617DB;
+  font-size: 13px;
+  margin: 5px 0 0;
+}
+.third .contain__h3 {
+  font-weight: 700;
+  font-size: 32px;
+  margin: 7px 0 9px;
+}
+.third .contain__p {
+  font-size: 12px;
+  width: 280px;
+  margin: 5px 0;
+}
+.third .contain__bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.third .contain__bottom .card1 {
+  width: 30%;
+  border: 3px solid #CCCCCC;
+  border-radius: 21%;
+  padding: 3px;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+}
+.third .contain__bottom .card1 .main {
+  overflow: hidden;
+  position: relative;
+}
+.third .contain__bottom .card1 span {
+  position: absolute;
+  bottom: -14%;
+  left: -18%;
+  background-color: #ececec;
+  width: 45%;
+  height: 35%;
+  border-radius: 50%;
+  text-align: right;
+  padding: 5% 10% 0 0;
+  font-weight: 700;
+  font-size: 20px;
+}
+.third .contain__bottom .card1 span:hover {
+  background-color: grey;
+  color: #1617DB;
+}
+.third .contain__bottom .card1:nth-child(1) .main {
+  background-color: #F8D7D9;
+  border-radius: 21%;
+}
+.third .contain__bottom .card1:nth-child(1) .main:hover {
+  background-color: rgba(248, 215, 217, 0.4);
+}
+.third .contain__bottom .card1:nth-child(2) .main {
+  background-color: #cccccc;
+  border-radius: 21%;
+}
+.third .contain__bottom .card1:nth-child(2) .main:hover {
+  background-color: rgba(204, 204, 204, 0.4);
+}
+.third .contain__bottom .card1:nth-child(3) .main {
+  background-color: #DCD2D4;
+  border-radius: 21%;
+}
+.third .contain__bottom .card1:nth-child(3) .main:hover {
+  background-color: rgba(248, 215, 217, 0.4);
+}
+
+@media (max-width: 600px) {
+  .third .contain__bottom .card1 span {
+    font-size: 13px;
+  }
+}
+@media (max-width: 400px) {
+  .third .contain__p {
+    width: 100%;
+  }
+  .third .contain__bottom .card1 {
+    width: 100%;
+    margin: 16px 0;
+  }
+  .third .contain__bottom .card1 span {
+    font-size: 20px;
+  }
+}
+.fourth .contain {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.fourth .contain .left {
+  width: 48%;
+}
+.fourth .contain .left iframe {
+  width: 100%;
+  height: 100%;
+}
+.fourth .contain .right {
+  width: 48%;
+}
+.fourth .contain .right__h3 {
+  font-weight: 700;
+  font-size: 32px;
+  margin: 0 0 9px;
+}
+.fourth .contain .right__p {
+  font-size: 12px;
+  margin: 5px 0 12px;
+}
+.fourth .contain .right__button {
+  color: #1617DB;
+  padding: 5px 12px;
+  border: 1px solid #cccccc;
+  background-color: inherit;
+  font-size: 12px;
+  font-weight: 500;
+}
+.fourth .contain .right__button:hover {
+  background-color: #cccccc;
+}
+
+@media (max-width: 600px) {
+  .fourth .contain .left, .fourth .contain .right {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+.five .contain .comment {
+  width: 350px;
+  padding: 5px 0 0 5px;
+  background-image: url(../media/Rectangle\ 44.png);
+  background-size: 100%;
+}
+.five .contain .comment .main {
+  font-size: 13px;
+  padding: 18px 18px;
+  background-color: #F4F4F4;
+  border-radius: 12px;
+}
+.five .contain .comment .main__ul {
+  padding-left: 0;
+  display: flex;
+  gap: 10px;
+}
+.five .contain .comment .main__ul li {
+  display: flex;
+  gap: 6px;
+}
+.five .contain .comment .main__ul li img {
+  width: 40px;
+}
+.five .contain .comment .main__ul li span {
+  font-size: 10px;
+}
+
+@media (max-width: 400px) {
+  .five .contain .comment {
+    width: 100%;
+  }
+}
+footer {
+  background-color: #f7f7f7;
+  margin-top: 60px;
+}
+footer .contain {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+footer .contain__ul {
+  width: 19%;
+  font-size: 14px;
+  padding-left: 0;
+  margin-top: 0;
+}
+footer .contain__ul li {
+  line-height: 32px;
+}
+footer .contain__ul li input {
+  line-height: 24px;
+  width: 100%;
+  font-size: 13px;
+  padding-left: 4px;
+}
+footer .contain__ul li i {
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 4px;
+}
+
+@media (max-width: 650px) {
+  footer .contain__ul {
+    width: 30%;
+  }
+}
+@media (max-width: 400px) {
+  footer .contain__ul {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

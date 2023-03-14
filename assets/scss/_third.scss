@@ -1,0 +1,116 @@
+.third{
+    .contain{
+        padding: 40px 0;
+        &__h5{
+            color: $kok;
+            font-size: 13px;
+            margin: 5px 0 0;
+        }
+        &__h3{
+            font-weight: 700;
+            font-size: 32px;
+            margin: 7px 0 9px;
+        }
+        &__p{
+            font-size: 12px;
+            width: 280px;
+            margin: 5px 0;
+        }
+        &__bottom{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 50px 0;
+            .card1{
+                width: 30%;
+                border: 3px solid #CCCCCC;
+                border-radius: 21%;
+                padding: 3px;
+                cursor: pointer;
+                overflow: hidden;
+                text-align: center;
+                .main{
+                    overflow: hidden;
+                    position: relative;
+                }
+                span{
+                    position: absolute;
+                    bottom: -14%;
+                    left: -18%;
+                    background-color: #ececec;
+                    width: 45%;
+                    height: 35%;
+                    border-radius: 50%;
+                    text-align: right;
+                    padding: 5% 10% 0 0;
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+                span:hover{
+                    background-color: grey;
+                    color: $kok;
+                }
+            }
+            .card1:nth-child(1){
+                .main{
+                    background-color: #F8D7D9;
+                    border-radius: 21%;
+                }
+                .main:hover{
+                    background-color: #F8D7D966;
+                }
+            }
+            .card1:nth-child(2){
+                .main{
+                    background-color: #cccccc;
+                    border-radius: 21%;
+                }
+                .main:hover{
+                    background-color: #CCCCCC66;
+                }
+            }
+            .card1:nth-child(3){
+                .main{
+                    background-color: #DCD2D4;
+                    border-radius: 21%;
+                }
+                .main:hover{
+                    background-color: #F8D7D966;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:600px){
+    .third{
+        .contain{
+            &__bottom{
+                .card1{
+                    span{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:400px){
+    .third{
+        .contain{
+            &__p{
+                width: 100%;
+            }
+            &__bottom{
+                .card1{
+                    width: 100%;
+                    margin: 16px 0;
+                    span{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

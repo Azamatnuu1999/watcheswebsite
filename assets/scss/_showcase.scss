@@ -1,0 +1,117 @@
+header{
+    background-image: url(../media/Rectangle\ 58.png), url(../media/pngwing\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover, contain;
+    background-position: center, left top;
+    .navbar{
+        &__ul{
+            display: flex;
+            gap: 12px;
+            width: fit-content;
+            margin-left: auto;
+            padding: 18px 0;
+            align-items: center;
+            li{
+                font-size: 14px;
+                button{
+                    border: 1px solid $kok;
+                    border-radius: 8px;
+                    font-size: 13px;
+                    padding: 5px 7px;
+                    color: white;
+                    text-transform: uppercase;
+                    background-color: $kok;
+                }
+                button:hover{
+                    background-color: inherit;
+                    color: $kok;
+                }
+            }
+            .active{
+                font-weight: 700;
+                border-bottom: 2px solid $kok;
+            }
+        }
+    }
+    .showcase{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 60px 0;
+        align-items: center;
+        .left{
+            width: 40%;
+            &__h5{
+                font-size: 12px;
+                text-transform: uppercase;
+                color: $kok;
+                font-weight: 600;
+                margin: 8px 0;
+            }
+            &__h1{
+                font-weight: 700;
+                margin: 8px 0;
+            }
+            &__p{
+                font-size: 13px;
+            }
+            &__button{
+                border: 1px solid $kok;
+                border-radius: 8px;
+                font-size: 13px;
+                padding: 5px 7px;
+                margin: 8px 0;
+                color: white;
+                text-transform: uppercase;
+                background-color: $kok;
+            }
+            &__button:hover{
+                background-color: inherit;
+                color: $kok;
+            }
+            .active{
+                background-color: inherit;
+                color: $kok;
+            }
+            .active:hover{
+                background-color: $kok;
+                color: white;
+            }
+        }
+        .right{
+            width: 60%;
+
+        }
+    }
+}
+
+@media(max-width:600px){
+    header{
+        .contain{
+            .showcase{
+                .left, .right{
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:350px){
+    header{
+        .contain{
+            .navbar{
+                &__ul{
+                    gap: 4px;
+                    li{
+                        font-size: 12px;
+                        button{
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
